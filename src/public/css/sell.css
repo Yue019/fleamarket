@@ -1,0 +1,138 @@
+.sell-container {
+    width: 40%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.sell-form__heading {
+    text-align: center;
+}
+
+
+.img-area {
+    position: relative;
+    width: auto;
+            /* 枠のサイズ */
+    height: 200px;
+            /* 枠のサイズ */
+    border: 2px dashed #ccc;
+            /* 点線の枠 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+#file-name {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+}
+
+.choice-button {
+    padding: 8px 12px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+.detail {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    color: gray;
+    width: 100%;
+    /* コンテナの幅に合わせる */
+    border-bottom: 2px solid lightgray;
+    box-sizing: border-box;
+    /* 幅を正確に保つ */
+}
+
+p {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-checkbox {
+    display: none;
+    /* チェックボックスを非表示に */
+}
+
+.category-label {
+    display: inline-block;
+    padding: 5px 12px;
+    border: 2px solid red;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: white;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.category-checkbox:checked+.category-label {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+
+/* フォーム要素をコンテナ幅に合わせる */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    /* 幅を100%にすることで、コンテナ幅に合わせる */
+    padding: 10px;
+    margin-bottom: 15px;
+    /* 各フォーム要素の間隔 */
+    border: 1px solid #ccc;
+    /* ボーダー */
+    border-radius: 5px;
+    /* 角を丸くする */
+    box-sizing: border-box;
+}
+
+/* フォームのボタンも同じ幅に */
+.form__button-submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ボタンのホバー時の色変更 */
+.form__button-submit:hover {
+    background-color: darkred;
+}
+
+.text-danger {
+    margin-top: 10px;
+    display: block;
+    font-size: small;
+}
+

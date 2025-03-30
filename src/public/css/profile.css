@@ -1,0 +1,120 @@
+
+/* 見出し部分 */
+.profile-form__heading {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.profile-form__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* フォーム全体 */
+form {
+    width: 100%;
+    margin: 0 auto;
+    /* 横方向に中央揃え */
+}
+
+/* フォーム内容 */
+.form__group-content {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* フォームの入力欄 */
+.form__item input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    appearance: none;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+/* フォームのボタン部分 */
+.form__button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form__button-submit:hover {
+    background-color: #cc0000;
+    /* ボタンホバー時の色 */
+}
+
+
+/* 円形のプロフィール画像 */
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+     /* 円形にする */
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+/* 画像の調整 */
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+/* 画像選択ボタン */
+.choice-button {
+    padding: 8px 12px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* ラベルのスタイル */
+.form__group-content p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* エラーメッセージのスタイル */
+.text-danger {
+    color: red;
+}
+

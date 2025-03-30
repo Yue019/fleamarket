@@ -1,0 +1,77 @@
+.index-heading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;  /* 下線とコンテンツの間に余白を設定 */
+}
+
+
+nav ul {
+    list-style-type: none;
+    /* リストの点を削除 */
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    /* リスト項目を横並びにする */
+    margin-right: 20px;
+    /* 項目間のスペース */
+}
+
+nav ul li a {
+    color: lightgray;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+/* 現在のページに対応するリンクの文字色を変更 */
+nav ul li a.active {
+    color: red;
+}
+
+/* ギャラリー全体の設定 */
+.gallery {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* 画面サイズに応じて折り返しを許可 */
+    gap: 20px;
+    /* アイテム間のスペース */
+    padding: 20px;
+    /* ギャラリー全体の余白 */
+}
+
+/* 各サムネイルアイテム */
+.thumbnail-item {
+    text-align: center;
+    width: 20%;
+    /* 各サムネイルの幅を30%に設定（適宜調整） */
+    min-width: 200px;
+    /* 最小幅を指定（小さな画面でも崩れないように） */
+}
+
+/* サムネイル画像のスタイル */
+.thumbnail {
+    width: 100%;
+    /* 画像の幅を親要素に合わせる */
+    height: auto;
+    /* 高さを自動調整 */
+    border-radius: 5px;
+}
+
+/* キャプションのスタイル */
+.caption {
+    margin-top: 10px;
+    /* 画像とキャプションの間に余白 */
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+
+

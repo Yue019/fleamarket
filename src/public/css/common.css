@@ -1,0 +1,178 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* 高さを100%に設定 */
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.header {
+    width: 80%;
+    background: black;
+    margin: 0 auto;
+    position: fixed;
+    /* ヘッダーを固定 */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    width: 100%;
+    box-sizing: border-box;
+        /* paddingがheightに影響しないようにする */
+        height: 100%;
+        /* ヘッダーの高さに合わせる */
+}
+
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header-utilities nav {
+    width: 70%;
+    flex-shrink: 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-right: 10%;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+.header-nav__button {
+    border: none;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+a {
+    color: white;
+}
+
+/* 検索フォームのスタイル */
+.header-nav__search {
+    margin-right: 20px;
+}
+
+.search-input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    /* フォームの幅を調整 */
+    max-width: 400px;
+    /* 最大幅を設定 */
+}
+
+/* メインコンテンツ */
+.container {
+    width: 80%;
+    background-color: white;
+    margin: 100px auto 0;
+    /* ヘッダー分の余白を追加 */
+    padding: 10px;
+    color: black;
+    position: relative;
+        /* 他の要素がヘッダーに重ならないように調整 */
+    z-index: 0;
+}
+
+/* フッター */
+.footer {
+    width: 80%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* エラーメッセージ */
+.text-danger {
+    color: red;
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid black;
+}
+
+/* リンク */
+.resend-link {
+    margin-top: 10px;
+}
+
+.resend-link a {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.resend-link a:hover {
+    color: #0056b3;
+}
+
+/* タブレット向けのスタイル */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    body {
+        font-size: 120%;
+    }
+
+    .header-nav__search {
+        margin-right: 5px;
+        flex-direction: column;
+        /* 画面幅が小さくなると縦並びにする場合 */
+        align-items: flex-start;
+        /* 左寄せにする */
+    }
+
+    .search-input {
+        width: 90%;
+    }
+}
+
+/* パソコン向けのスタイル */
+@media (min-width: 1540px) {
+    body {
+        font-size: 140%;
+    }
+}
