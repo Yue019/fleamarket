@@ -21,7 +21,9 @@ git@github.com:Yue019/fleamarket.git
 1. アプリケーションのURL<br>
 http://localhost:8090
 2. Mysql：3306
-3. MailHog：1025
+3. phpMMyAdmin<br>
+http://localhost:8083
+4. MailHog：1025
 
 ##  アプリケーション内でのログイン情報
 - メールアドレス：kiwako@gmail.com
