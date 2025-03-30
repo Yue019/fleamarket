@@ -38,7 +38,7 @@ Route::post('/email/verify/{id}/{hash}', [VerificationController::class, 'verify
 // 初回ログイン後のプロフィールページ
 Route::get('/mypage/profile', [ProfileController::class, 'showProfileForm'])->name('mypage.profile')->middleware('verified');
 
-// プロフィール更新
+// プロフィール更新、商品登録
 Route::middleware(['auth'])->group(function () {
     Route::put('/profile/update', [ProfileController::class, 'updateProfile'])->name('profile.update');
 
