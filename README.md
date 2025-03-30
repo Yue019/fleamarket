@@ -21,7 +21,7 @@ git@github.com:Yue019/fleamarket.git
 1. アプリケーションのURL<br>
 http://localhost:8090
 2. Mysql：3306
-3. phpMMyAdmin<br>
+3. phpMyAdmin<br>
 http://localhost:8083
 4. MailHog：1025
 
